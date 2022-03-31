@@ -97,4 +97,12 @@ abstract public class LongRunningProcess extends Process {
     }
     
     abstract protected Runnable getRunnable();
+
+}  protected LongRunningProcess(String progress) {
+    _inprogress = progress;
 }
+
+    protected LongRunningProcess(String cancelled) {
+        _canceled = cancel;
+    
+    }
